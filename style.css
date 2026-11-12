@@ -1,0 +1,7 @@
+a[href*="dashboard.twitch.tv"][href*="/stream"] {
+  display: none !important;
+}
+
+div:has(> a[href*="dashboard.twitch.tv"][href*="/stream"]) {
+  display: none !important;
+}

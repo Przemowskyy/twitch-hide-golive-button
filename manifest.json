@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Twitch Hide Go Live Button",
+  "version": "1.0.0",
+  "description": "Removes the prominent 'Go Live' / 'Rozpocznij transmitowanie' button from the Twitch navigation bar.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.twitch.tv/*",
+        "https://twitch.tv/*"
+      ],
+      "css": ["style.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
